@@ -1,0 +1,191 @@
+/* Container for the enquiry form */
+.enquire-form {
+    display: flex;
+    /* flex:1; */
+    /* flex-direction: column; */
+    width: 100%;
+    justify-content: stretch;
+
+    /* align-items: flex-start; */
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 4rem 3rem;
+    margin: 1rem auto;
+}
+
+/* Style for the heading */
+.enquire-form h4 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    padding-top: 16px;
+    flex: 1;
+    font-weight: 600;
+}
+
+/* Form container styling */
+.enquire-form form {
+    /* max-width: 100%; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: stretch;
+    align-items: center;
+     margin: 0 1rem;
+     padding-bottom: 10px;
+    margin: auto 3rem;
+    /* justify-content: flex-end;  */
+    /* margin-left: 3rem; */
+    /* gap: 10px; */
+    /* flex: 3; */
+}
+
+/* Style for the user input */
+.user-input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    max-width: 100%;
+    width: 65%;
+    margin-right: 10px;
+
+}
+/* .enquire-btn {
+ 
+    padding: 8px;
+    font-size: 0.8em;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 7rem;
+    cursor: pointer;
+    margin-left: 3rem;
+    float: left;
+ }  */
+
+/* Style for the submit button */
+.enquire-btn {
+    padding: 8px;
+    width: 7rem;
+    font-size: 0.8em;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    /* margin-left: 3rem; */
+    align-items: right;
+}
+
+/* Button hover effect */
+.enquire-btn:hover {
+    background-color: #250c52;
+}
+
+/* Mobile view - Align everything to the left */
+@media (max-width: 768px) {
+    .enquire-form {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .enquire-form h4 {
+        text-align: left;
+        margin: 0;
+        font-size: 1.2em;
+        justify-content: stretch;
+        margin-right: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .enquire-form form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+        margin: 1rem;
+    }
+
+    .user-input {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .enquire-btn {
+        max-width: 100%;
+        width: 8rem;  
+        margin: 1rem 0;  
+        padding: 0.7rem;
+        display: block;  
+        align-self: flex-start; 
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .enquire-form {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem auto;
+    }
+
+    .enquire-form h4{
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: stretch;
+        margin: 1rem;
+    }
+    .enquire-form form {
+        justify-content: stretch;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .enquire-btn{
+        margin-top: 10px;
+        text-align: center;
+        margin: 1rem auto;
+    }
+}
+
+
+.success-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .success-modal h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  

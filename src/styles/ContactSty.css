@@ -1,0 +1,32 @@
+.contact {
+  /* background-color: #282c34; */
+    padding: 50px 20px;
+    align-items: center;
+  }
+.contact h2{
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+}
+.contact h2 span{
+  text-decoration: underline;
+}
+  
+  .contact form {
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .contact input {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .subscribe-btn {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }

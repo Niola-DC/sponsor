@@ -1,0 +1,174 @@
+/* General footer container styling */
+
+footer {
+  background-color: black; 
+  padding: 20px 0;
+  box-sizing: border-box;
+  /* margin-bo: 2rem; */
+  color: white; 
+}
+
+/* Add space at the top for the enquiry component */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 40px;  /* Add space at the top */
+  margin: 0 2rem;
+}
+
+/* Footer logo styling */
+.footer-logo {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Styling for the footer sections with links and contact details */
+.footers {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.footer-links ul,
+.footer-contact ul,
+.main-footer ul, .footer-downloads ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li,
+.footer-contact ul li {
+  margin-bottom: 10px;
+
+}
+.main-footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links a,
+.footer-contact a {
+  text-decoration: none;
+  color: white; 
+  font-size: 14px;
+  
+}
+
+/* Social media buttons */
+.footer-contact .social-button {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-contact .social-button img {
+  width: 15px;
+  height: 15px;
+}
+
+.footer-contact .social-button:hover {
+  background-color: #333; /* Darker shade on hover */
+}
+
+/* Styling for the download section */
+.footer-downloads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-downloads img {
+  width: 150px;
+  height: auto;
+}
+
+.download-btn {
+  margin-top: 10px;
+  padding: 10px 10px;
+  background-color: #fff;  
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.download-btn a:hover {
+    color: #fff;
+    background-color: #383875;  
+}
+
+.main-footer {
+  display: none;
+}
+
+/* Mobile view - Show the main-footer and adjust layout */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  ul{
+    margin-bottom: 1rem;
+  }
+  .footer-links,
+  .footer-contact {
+    display: none;
+    margin-bottom: 20px;
+  }
+
+  .main-footer {
+    display: block; /* Show this div on mobile */
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  /* Adjust mobile layout */
+  .footer-links ul,
+  .footer-contact ul,
+  .main-footer ul, .footer-downloads ul {
+    padding: 0;
+    margin: 0.5rem 0;
+    list-style: none;
+  }
+
+  .footer-links ul li a,
+  .footer-contact ul a {
+    font-size: 14px;
+  }
+
+  /* Style for mobile download button */
+  .footer-downloads img {
+    width: 120px;
+  }
+  .social-button {
+    background-color: black;
+    margin: 0 5px;
+    border: none;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  .main-footer ul li {
+    text-decoration: none;
+    color: white;
+    line-height: 2rem;
+  /* margin: 2rem 0; */
+}
+.main-footer ul {
+    margin: 1.5rem 0;
+}
+
+}
