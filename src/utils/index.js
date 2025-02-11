@@ -75,3 +75,30 @@ export const FAQ = [
       "Currently, Payskul is available to students who are actively enrolled or enrolling in a school. If you meet the eligibility criteria and are enrolled in a postgraduate program at a school registered with Payskul, you should be able to use the platform to help finance your education.",
   },
 ];
+
+export const FOOTER_DETAILS = {
+  pages: [
+    { href: "/#features", text: "explore" },
+    { href: "/#news", text: "communities" },
+    { href: "/#contact", text: "resources" },
+  ],
+  company: [
+    { href: "/terms", text: "terms" },
+    { href: "/privacy-policy", text: "privacy policy" },
+  ],
+  "reach us": [
+    { href: "/contact", text: "contact us" },
+    { href: "mailto:info@payskul.com", text: "Email: info@payskul.com" },
+  ],
+  "phone lines": [
+    { href: "tel:+2349160708325", text: "+234 916 070 8325" },
+    { href: "tel:+2347067514560", text: "+234 706 751 4560" },
+  ],
+};
+
+export const SOCIALS = ["facebook", "instagram", "linkedin", "twitter"];
+
+/**
+ *  <a href="mailto:"></a>
+ *  <a href="tel:+"></a>
+ */
