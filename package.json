@@ -17,6 +17,7 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5",
+    "sponsor": "file:",
     "tailwindcss": "^4.0.6"
   },
   "devDependencies": {
